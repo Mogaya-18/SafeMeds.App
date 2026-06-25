@@ -1,0 +1,45 @@
+.sidebar {
+  width: 270px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #065f73;
+  box-sizing: border-box;
+  padding-left: 45px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sidebar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  background: transparent;
+}
+.sidebar-buttons img {
+  height: 28px;
+  width: auto;
+  display: flex;
+
+  align-items: center;
+  object-fit: cover;
+}
+
+.logout-btn {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}

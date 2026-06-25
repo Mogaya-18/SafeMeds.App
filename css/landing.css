@@ -1,3 +1,38 @@
+.landing-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.landing-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.landing-hero p {
+  max-width: 32rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.landing-cta {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.landing-cta:hover {
+  background-color: #1d4ed8;
+}
+
 /* Login and Register button colors */
 .login-btn {
   background-color: #ffffff;
