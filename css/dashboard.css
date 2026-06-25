@@ -29,3 +29,17 @@
   align-items: center;
   object-fit: cover;
 }
+
+.logout-btn {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
