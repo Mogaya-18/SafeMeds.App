@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SafeMeds — Login</title>
+    <title>SafeMeds — Register</title>
     <link rel="stylesheet" href="../css/signup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +18,8 @@
   </head>
   <body>
     <main class="login-card">
-      <form id="login-form">
-        <h1>WELCOME</h1>
+      <form id="register-form">
+        <h1>REGISTER</h1>
         <p id="auth-message" class="auth-message" hidden></p>
         <input
           id="email"
@@ -34,13 +34,21 @@
           type="password"
           class="input-field"
           placeholder="password"
-          autocomplete="current-password"
+          autocomplete="new-password"
           required
         /><br />
-        <button type="submit" id="login-btn" class="login-btn">Login</button>
+        <input
+          id="confirm-password"
+          type="password"
+          class="input-field"
+          placeholder="confirm password"
+          autocomplete="new-password"
+          required
+        /><br />
+        <button type="submit" id="register-btn" class="login-btn">Create Account</button>
 
-        <p>Don't have an Account? <a href="register.html">Register</a></p>
-        <div class="divider">OR LOGIN WITH</div>
+        <p>Already have an account? <a href="signup.html">Login</a></p>
+        <div class="divider">OR SIGN UP WITH</div>
         <div>
           <button type="button" id="google-btn" class="google-btn">
             <i class="fa-brands fa-google"></i>Google
@@ -48,6 +56,6 @@
         </div>
       </form>
     </main>
-    <script type="module" src="../js/login.js"></script>
+    <script type="module" src="../js/register.js"></script>
   </body>
 </html>
