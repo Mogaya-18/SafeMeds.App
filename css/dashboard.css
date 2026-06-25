@@ -20,6 +20,12 @@
   gap: 12px;
   color: #ffffff;
   background: transparent;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.2s ease;
+}
+.sidebar-buttons:hover {
+  color: #bbf7d0;
 }
 .sidebar-buttons img {
   height: 28px;
@@ -28,12 +34,6 @@
   gap: 5px;
   align-items: center;
   object-fit: cover;
-}
-.metric-title {
-  margin-left: 300px;
-  padding-top: 50px;
-  padding-right: 30px;
-  margin-bottom: 1px;
 }
 .dashboard-workspace {
   display: grid;
@@ -50,28 +50,28 @@
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   grid-column: span 2;
-  height: 140px;
+  height: 200px;
 }
 .metric-low-stock {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   grid-column: span 2;
-  height: 140px;
+  height: 200px;
 }
 .metric-monthly-sales {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   grid-column: span 3;
-  height: 140px;
+  height: 200px;
 }
 .metric-orders-received {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   grid-column: span 2;
-  height: 140px;
+  height: 200px;
 }
 .metric-inventory {
   background-color: #ffffff;
@@ -105,4 +105,83 @@
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   height: 200px;
+}
+.metric-notifications {
+  height: 200px;
+  grid-column: 10 / span 3;
+  grid-row: 1;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 24px;
+}
+.metric-reviews {
+  height: 250px;
+  grid-column: 10 / span 3;
+  grid-row: 2;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 24px;
+}
+.metric-assistant {
+  height: 200px;
+  grid-column: 10 / span 3;
+  grid-row: 3;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 24px;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 300px;
+  padding-top: 15px;
+  padding-right: 40px;
+  margin-bottom: 0px;
+}
+.metric-title {
+  font-family: "Inter", system-ui, sans-serif;
+  font-family: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  padding: 0;
+}
+.top-header-profile-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+}
+.user-info-side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.profile-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-name {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+.settings-icon {
+  font-size: 1.2rem;
+  color: #64748b;
+  cursor: pointer;
+  margin-left: 4px;
 }
