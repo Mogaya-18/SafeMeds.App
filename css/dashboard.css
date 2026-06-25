@@ -25,7 +25,84 @@
   height: 28px;
   width: auto;
   display: flex;
-
+  gap: 5px;
   align-items: center;
   object-fit: cover;
+}
+.metric-title {
+  margin-left: 300px;
+  padding-top: 50px;
+  padding-right: 30px;
+  margin-bottom: 1px;
+}
+.dashboard-workspace {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  margin-left: 290px;
+  padding-top: 25px;
+  padding-right: 40px;
+  grid-column: span 12;
+  margin-bottom: 10px;
+}
+.metric-total-meds {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  grid-column: span 2;
+  height: 140px;
+}
+.metric-low-stock {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  grid-column: span 2;
+  height: 140px;
+}
+.metric-monthly-sales {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  grid-column: span 3;
+  height: 140px;
+}
+.metric-orders-received {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  grid-column: span 2;
+  height: 140px;
+}
+.metric-inventory {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  grid-column: span 9;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.metric-med-chart {
+  grid-column: 1 / span 3;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  height: 200px;
+}
+.metric-med-category {
+  grid-column: span 3;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  height: 200px;
+}
+.metric-sales-graph {
+  grid-column: span 3;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  height: 200px;
 }
