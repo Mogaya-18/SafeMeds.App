@@ -185,3 +185,43 @@
   cursor: pointer;
   margin-left: 4px;
 }
+.meds {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: medium;
+}
+.new {
+  background-color: #dcfce7;
+  color: #15803d;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 45px;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+.num {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -1px;
+}
+.trend-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #15803d;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
