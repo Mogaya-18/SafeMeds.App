@@ -35,6 +35,7 @@
   align-items: center;
   object-fit: cover;
 }
+/* Styling for all the boxes and their content*/
 .dashboard-workspace {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -53,7 +54,7 @@
   height: 200px;
 }
 .metric-low-stock {
-  background-color: #ffffff;
+  background-color: #fce7e6;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   grid-column: span 2;
@@ -185,6 +186,7 @@
   cursor: pointer;
   margin-left: 4px;
 }
+/* Box 1 Styling */
 .meds {
   display: flex;
   justify-content: space-between;
@@ -224,4 +226,55 @@
   font-family: "Inter", system-ui, sans-serif;
   font-size: 1rem;
   font-weight: 600;
+}
+/* Box 2 Styling */
+.stock {
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: medium;
+}
+.widget-header {
+  justify-content: space-between;
+}
+.alert-icon {
+  background-color: #d32f2f;
+  color: #ffffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.red {
+  color: red;
+  display: block;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: larger;
+  font-family: sans-serif;
+}
+.separator {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 10px 0;
+}
+.meds-list {
+  padding-left: 3px;
+  margin: 0;
+}
+.meds-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+.meds-status {
+  color: #c62828;
+  font-weight: bold;
 }
