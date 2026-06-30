@@ -35,7 +35,7 @@
 
 /* Login and Register button colors */
 .login-btn {
-  background-color: #ffffff;
+  background-color: transparent;
   color: #0b5394;
 }
 
@@ -43,6 +43,7 @@
   background-color: transparent;
   color: #ffffff;
   border: 2px solid #ffffff;
+  
 }
 
 /* resize the logo */
@@ -559,4 +560,62 @@
   display: flex;
   gap: 12px;
   font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes drift {
+  0%,  100% { transform: translateY(0px)   rotate(var(--r)); }
+  50%        { transform: translateY(-18px) rotate(var(--r)); }
+}
+
+/* 2. Base pill shape — shared by all four pills */
+.hero-pill {
+  position: absolute;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.09);
+  pointer-events: none;
+}
+
+/* 3. Individual pill positions, sizes, and timing */
+.hero-pill:nth-child(1) {
+  width: 180px; height: 66px;
+  top: 14%; left: 6%;
+  --r: -28deg;
+  animation: drift 7s ease-in-out infinite;
+}
+.hero-pill:nth-child(2) {
+  width: 100px; height: 40px;
+  bottom: 22%; right: 7%;
+  --r: 22deg;
+  animation: drift 9s ease-in-out infinite 1.2s;
+}
+.hero-pill:nth-child(3) {
+  width: 60px; height: 24px;
+  top: 55%; left: 11%;
+  --r: 10deg;
+  animation: drift 8s ease-in-out infinite 0.5s;
+}
+.hero-pill:nth-child(4) {
+  width: 130px; height: 50px;
+  top: 20%; right: 12%;
+  --r: -14deg;
+  animation: drift 10s ease-in-out infinite 2s;
+}
+
+.your-section {
+  position: relative;  /* so absolute pills position against the section */
+  overflow: hidden;    /* clips pills that drift near the edges */
 }
