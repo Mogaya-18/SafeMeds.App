@@ -16,7 +16,7 @@ const authMessage = document.getElementById("auth-message");
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    window.location.replace("../html/dashboard.html");
+    window.location.replace("../html/landing.html");
   }
 });
 
