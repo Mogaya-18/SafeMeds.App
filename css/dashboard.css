@@ -186,7 +186,7 @@
   cursor: pointer;
   margin-left: 4px;
 }
-/* Box 1 Styling */
+/* ---------------------------------------------------------------------------------------------- Box 1 Styling -------------------------------------------------------------------- */
 .meds {
   display: flex;
   justify-content: space-between;
@@ -227,7 +227,7 @@
   font-size: 1rem;
   font-weight: 600;
 }
-/* Box 2 Styling */
+/*  ---------------------------------------------------------------------------------------Box 2 Styling ----------------------------------------------------------------- */
 .stock {
   padding-top: 15px;
   padding-left: 10px;
@@ -280,7 +280,7 @@
   color: #c62828;
   font-weight: bold;
 }
-/* Box 3 Styling */
+/* ---------------------------------------------------------------------------------- Box 3 Styling-------------------------------------------------------------- */
 .sales {
   padding-top: 15px;
   padding-left: 10px;
@@ -405,4 +405,111 @@
   font-size: 1rem;
   color: #1e293b;
   margin-top: 4px;
+}
+/* ----------------------------------------------------------------------------------Box 9 styling--------------------------------------------------------------------------------------- */
+.notification {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.notif-title {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.bell-badge-wrapper {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+.bell-icon {
+  font-size: 1.3rem;
+  color: #0891b2;
+}
+.red-badge-dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 7px;
+  height: 7px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+}
+.dropdown-icon {
+  font-size: 1.1rem;
+  color: #0f172a;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.dropdown-icon:hover {
+  transform: translate(1px);
+}
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+}
+.notif-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.notif-item:hover {
+  background-color: #f8fafc;
+}
+.notif-item.active-highlight {
+  background-color: #e2e8f0;
+}
+.notif-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.normal-bell {
+  font-size: 1rem;
+  color: #06b6d4;
+}
+.warning-icon {
+  font-size: 0.95rem;
+  color: #0891b2;
+}
+
+.notif-red-dot {
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  width: 5px;
+  height: 5px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+
+.notif-text {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #0f172a;
+  white-space: nowrap;
 }
